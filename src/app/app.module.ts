@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SimpleRouteComponent } from './simple-route/simple-route.component';
 
+import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SimpleRouteComponent } from './simple-route/simple-route.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]
