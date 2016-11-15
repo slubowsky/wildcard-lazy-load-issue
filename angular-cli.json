@@ -17,9 +17,7 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "mobile": false,
-      "styles": [
-        "styles.scss"
-      ],
+      "styles": [],
       "scripts": [],
       "environments": {
         "source": "environments/environment.ts",
@@ -41,7 +39,7 @@
     }
   },
   "defaults": {
-    "styleExt": "scss",
+    "styleExt": "css",
     "prefixInterfaces": false,
     "inline": {
       "style": false,

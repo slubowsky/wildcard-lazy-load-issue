@@ -1,20 +1,11 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-
-import {SimpleRouteComponent} from './simple-route/simple-route.component';
-import {BundledModule} from './bundled/bundled.module';
-
-export function loadBundledModule() { return BundledModule; }
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 export const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    component: SimpleRouteComponent
-  },
-  {
-    path: 'bundled',
-    loadChildren: loadBundledModule
+    redirectTo: 'lazy',
+    pathMatch: 'full'
   },
   {
     path: 'lazy',

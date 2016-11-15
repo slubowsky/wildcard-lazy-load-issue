@@ -3,8 +3,7 @@ import { FooService } from './foo.service';
 
 @Component({
   selector: 'app-lazy',
-  templateUrl: './lazy.component.html',
-  styleUrls: ['./lazy.component.scss']
+  templateUrl: './lazy.component.html'
 })
 export class LazyComponent implements OnInit {
 
