@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FooService } from './foo.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-lazy',
@@ -7,10 +7,11 @@ import { FooService } from './foo.service';
 })
 export class LazyComponent implements OnInit {
 
-  constructor(private fooService: FooService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.fooService.doSomething();
+    this.route.data.forEach((data: { id: number }) => {
+      console.log('LazyComponent', data.id);
+    });
   }
-
 }

@@ -4,11 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'lazy',
+    redirectTo: '1/lazy',
     pathMatch: 'full'
   },
   {
-    path: 'lazy',
+    path: ':id/lazy',
     loadChildren: './lazy/lazy.module#LazyModule'
   }
 ];

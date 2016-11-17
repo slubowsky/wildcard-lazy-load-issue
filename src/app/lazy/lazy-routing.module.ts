@@ -9,7 +9,14 @@ export const routes: Routes = [
     path: '',
     component: LazyComponent,
     resolve: {
-      foo: FooResolve
+      id: FooResolve
+    }
+  },
+  {
+    path: ':id',
+    component: LazyComponent,
+    resolve: {
+      id: FooResolve
     }
   }
 ];
