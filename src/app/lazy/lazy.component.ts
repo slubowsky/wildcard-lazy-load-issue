@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-lazy',
@@ -7,11 +6,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class LazyComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit() {
-    this.route.data.forEach((data: { id: number }) => {
-      console.log('LazyComponent', data.id);
-    });
   }
 }
